@@ -1,0 +1,46 @@
+//
+//  ViewController.swift
+//  sampleTextView
+//
+//  Created by Motoki on 2016/08/24.
+//  Copyright © 2016年 Motoki. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var myTextView: UITextView!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+            myTextView.text="Hellow"
+            myTextView.textColor = UIColor.blueColor()
+        myTextView.font = UIFont(name:"AmericonTyperiter",size: 20)
+        myTextView.textAlignment = NSTextAlignment.Center
+        
+        // TODO:Hellow10こ表示（教科書１４５for文使用）
+        
+        for _ in 0...9 {
+            myTextView.text = myTextView.text + "Hellow"
+        }
+        
+        // TODO: こんにちはnで10こ連結して表示（144P while文使用）
+        var n = 0
+        while (n < 10){
+            myTextView.text = myTextView.text + "こんにちは\(n)"
+                n++
+        }
+        
+    }
+    @IBAction func buttonClose(sender: UIButton) {
+        myTextView.
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        
+        }
+    
+        // Dispose of any resources that can be recreated.
+    }
+
