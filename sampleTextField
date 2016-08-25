@@ -1,0 +1,37 @@
+//
+//  ViewController.swift
+//  sampleTextField06
+//
+//  Created by Motoki on 2016/08/24.
+//  Copyright © 2016年 Motoki. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+    @IBOutlet weak var myTextField: UITextField!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+
+    // リターンキーが押された時
+    @IBAction func tapReturn(sender: UITextField) {
+    print(myTextField.text)
+    }
+    
+    // Closeボタンが押された時
+    @IBAction func tapClose(sender: UIButton) {
+        // キーボードを閉じる
+        myTextField.resignFirstResponder()
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+
+}
+
